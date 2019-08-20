@@ -9,8 +9,12 @@ def map(source_array)
 end
 
 def reduce(source_array, starting_point = 0)
-  if(source_array[0].class)
-  result = starting_point == 0 ? source_array[0] : starting_point
+  result = source_array[0]
+  
+  if(source_array[0].class == Integer)
+    result = starting_point == 0 ? 0 : starting_point
+  end
+  
   i = 0
   while i < source_array.length do
     result = yield(result, source_array[i])
