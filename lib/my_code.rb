@@ -5,5 +5,3 @@ def map_to_negativize(source_array)
   base
 end
 
-map_to_negativize
-  # Your Code Here
